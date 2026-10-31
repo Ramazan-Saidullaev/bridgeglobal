@@ -1,7 +1,7 @@
 services:
-  test-site:
+  bridgeglobal-site:
     image: nginx:alpine
-    container_name: test-sanau-site
+    container_name: bridgeglobal
     restart: unless-stopped
 
     ports:
