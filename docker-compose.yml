@@ -1,0 +1,11 @@
+services:
+  test-site:
+    image: nginx:alpine
+    container_name: test-sanau-site
+    restart: unless-stopped
+
+    ports:
+      - "127.0.0.1:8084:80"
+
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
